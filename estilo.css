@@ -478,7 +478,6 @@ a:hover, button:hover {
 
 
 
-/* === Responsividade e menu hamburguer adicionados === */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -550,7 +549,6 @@ a:hover, button:hover {
   }
 }
 
-/* Botão ativo (transforma em X) */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translateY(8px);
 }
@@ -560,3 +558,37 @@ a:hover, button:hover {
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translateY(-8px);
 }
+
+/* === Ajustes responsivos para a seção inicial === */
+@media (max-width: 980px) {
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .inicio-esquerda {
+    width: 100%;
+    height: 40vh; /* imagem ocupa metade da tela */
+    background-position: center;
+    background-size: cover;
+  }
+
+  .inicio-direita {
+    width: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .inicio-direita h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .inicio-direita .destaque {
+    display: inline-block;
+  }
+}
+
