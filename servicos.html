@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Segura Mais - Serviços</title>
+  <link rel="icon" type="image/png" href="imagens/logo.png">
+
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="servicos-fundo">
+  <header class="site-cabecalho">
+    <button class="hamburger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <div class="mobile-menu" id="mobileMenu"><nav><ul><li><a href="index.html">Home</a></li><li><a href="sobre.html">Sobre nós</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="index.html#contato">Contato</a></li><li><a href="index.html#comentarios">Comentários</a></li></ul></nav></div>
+    <div class="cabecalho-interno">
+      <div class="logo"><a href="index.html"><img src="imagens/logos.png" alt="logo"></a></div>
+      <nav class="principal-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+          <li><a href="index.html#comentarios">Comentários</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="servicos">
+      <div class="servicos-cabecalho">
+        <h1>SERVIÇOS</h1>
+      </div>
+      <div class="servico-item">
+        <img src="imagens/monitoramento.png" alt="Monitoramento eletrônico">
+        <p>Na Segura Mais, o serviço de monitoramento eletrônico é feito com tecnologia de ponta. Utilizamos câmeras IP de alta resolução, sensores de movimento, alarmes inteligentes e sistemas com inteligência artificial capazes de identificar comportamentos suspeitos em tempo real. Toda a operação é acompanhada por uma central de monitoramento 24h, equipada com softwares de análise avançada e comunicação direta com as equipes de pronta resposta. Assim, garantimos tempo de reação imediato e total segurança para residências, empresas e condomínios.</p>
+      </div>
+      <div class="servico-item invertido">
+        <img src="imagens/vigilancia.png" alt="Vigilância patrimonial">
+        <p>Nosso serviço de vigilância patrimonial alia preparo humano e tecnologia. Contamos com vigilantes altamente treinados, uniformizados e conectados a um sistema de supervisão via rádio digital e GPS. Cada posto é equipado com botões de pânico, câmeras de apoio e rondas eletrônicas, que permitem registrar e acompanhar todas as atividades em tempo real. Atuamos de forma preventiva, garantindo a integridade de pessoas, bens e instalações com eficiência e disciplina operacional.</p>
+      </div>
+      <div class="servico-item">
+        <img src="imagens/escoltaarmada.png" alt="Escolta armada">
+        <p>A escolta armada da Segura Mais oferece proteção total no transporte de cargas e valores. Utilizamos viaturas rastreadas por GPS, comunicação criptografada e equipes treinadas em táticas defensivas e evasivas. Todo o trajeto é monitorado pela nossa central, que acompanha a movimentação em tempo real e mantém contato constante com os condutores. Trabalhamos com armamentos modernos e protocolos rigorosos de segurança, garantindo que cada operação seja executada com sigilo, precisão e confiabilidade.</p>
+      </div>
+      <div class="servico-item invertido">
+        <img src="imagens/portaria.png" alt="Portaria e controle de acesso">
+        <p>Nosso sistema de portaria e controle de acesso é referência em eficiência e modernidade. Oferecemos tanto portaria física tradicional quanto portaria remota inteligente, com suporte de câmeras de alta definição, sistemas biométricos, QR Code e reconhecimento facial. O controle de entrada e saída é automatizado e integrado à central de monitoramento, permitindo rastreabilidade completa e segurança total sem comprometer a agilidade do dia a dia.</p>
+      </div>
+      <div class="servico-item">
+        <img src="imagens/intalacao.png" alt="Instalação e manutenção">
+        <p>A Segura Mais conta com uma equipe técnica especializada na instalação, calibração e manutenção preventiva de equipamentos de segurança. Trabalhamos com as melhores marcas do mercado, garantindo qualidade e durabilidade em CFTV, alarmes, cercas elétricas, sensores, interfones e controle de acesso. Cada projeto é planejado de forma personalizada, com suporte contínuo e revisões periódicas para assegurar o máximo desempenho e confiabilidade dos sistemas.</p>
+      </div>
+      <div class="servico-item invertido">
+        <img src="imagens/eletronica.png" alt="Segurança eletrônica integrada">
+        <p>A segurança eletrônica integrada é o futuro — e nós já estamos nele. Unimos todos os nossos sistemas (câmeras, alarmes, controle de acesso e monitoramento) em uma única plataforma inteligente, que pode ser acessada via aplicativo, desktop ou central remota. Essa integração permite uma resposta rápida, automatização de processos e redução de falhas humanas. Com tecnologia de última geração, IA e armazenamento em nuvem, oferecemos um nível de proteção completo, inteligente e em constante evolução.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-rodape">
+    <div class="rodape-interno">
+      <div>© Segura Mais - 2025</div>
+      <div>Endereço fictício • (00) 0000-0000</div>
+    </div>
+  </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  if (!hamburger || !mobileMenu) return;
+
+  hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('open');
+  });
+
+  document.addEventListener('click', function(e) {
+    if (mobileMenu.classList.contains('open') && !mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

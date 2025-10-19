@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Segura Mais - Nossa História</title>
+  <link rel="icon" type="image/png" href="imagens/logo.png">
+
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-cabecalho">
+    <button class="hamburger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <div class="mobile-menu" id="mobileMenu"><nav><ul><li><a href="index.html">Home</a></li><li><a href="sobre.html">Sobre nós</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="index.html#contato">Contato</a></li><li><a href="index.html#comentarios">Comentários</a></li></ul></nav></div>
+    <div class="cabecalho-interno">
+      <div class="logo"><a href="index.html"><img src="imagens/logos.png" alt="logo"></a></div>
+      <nav class="principal-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+          <li><a href="index.html#comentarios">Comentários</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+  <section class="historia-sobre">
+  <div class="historia-cabecalho">
+    <h1>NOSSA HISTÓRIA</h1>
+  </div>
+  <div class="historia-conteudo">
+    <div class="historia-texto">
+      <p>
+        Desde 2013, a Segura Mais tem construído uma trajetória sólida no setor de segurança privada, pautada na seriedade, no compromisso com a proteção e na busca constante pela excelência. Ao longo dos anos, consolidamos nossa presença no mercado oferecendo serviços completos de monitoramento, vigilância patrimonial e escolta armada, sempre com foco em proporcionar tranquilidade e confiança aos nossos clientes.
+        <br><br>
+        O que começou como um projeto ambicioso — voltado a suprir a necessidade de segurança especializada em empresas e condomínios — rapidamente se transformou em uma referência em soluções integradas de proteção. Com uma visão moderna e inovadora, a Segura Mais apostou desde o início na tecnologia de ponta como aliada fundamental para garantir eficiência e resultados precisos.
+      </p>
+    </div>
+    <div class="historia-imagem">
+      <img src="imagens/historia.png" alt="Profissional de segurança">
+    </div>
+  </div>
+  <div class="historia-texto-baixo">
+    <p>
+      Nossa equipe é formada por profissionais altamente qualificados e treinados, que atuam com disciplina, ética e comprometimento. Valorizamos o desenvolvimento contínuo de cada colaborador, investindo em capacitação, reciclagem e aperfeiçoamento técnico, pois entendemos que a segurança das pessoas e do patrimônio exige preparo e atualização constante.
+      <br><br>
+      Ao longo dessa caminhada, conquistamos parcerias duradouras com empresas, condomínios e instituições de diversos segmentos, sempre pautados pela confiança, responsabilidade e agilidade no atendimento. Cada cliente atendido representa uma história de sucesso construída com dedicação e transparência.
+      <br><br>
+      Mais do que oferecer serviços, a Segura Mais tem como missão cuidar do que é mais importante para você. Nossa estrutura moderna, aliada a um sistema de monitoramento inteligente e a recursos tecnológicos avançados, permite respostas rápidas e eficientes em qualquer situação. Trabalhamos incansavelmente para antecipar riscos e oferecer soluções sob medida que garantam segurança real, 24 horas por dia.
+      <br><br>
+      Com mais de uma década de atuação, seguimos firmes no propósito de evoluir junto com nossos clientes, acompanhando as mudanças do mercado e as novas demandas de proteção. A Segura Mais não é apenas uma empresa de segurança — é uma parceira comprometida com o bem-estar, a tranquilidade e a confiança de todos que acreditam no nosso trabalho.
+      <br><br>
+      Porque segurança é mais do que um serviço: é uma responsabilidade que assumimos com orgulho e dedicação. <br>
+      <strong>Somos a Segura Mais — cuidando de você, do seu patrimônio e do seu futuro.</strong>
+    </p>
+  </div>
+</section>
+  </main>
+  <footer class="site-rodape">
+    <div class="rodape-interno">
+      <div>© Segura Mais - 2025</div>
+      <div>Endereço fictício • (00) 0000-0000</div>
+    </div>
+  </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  if (!hamburger || !mobileMenu) return;
+
+  hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('open');
+  });
+
+  document.addEventListener('click', function(e) {
+    if (mobileMenu.classList.contains('open') && !mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

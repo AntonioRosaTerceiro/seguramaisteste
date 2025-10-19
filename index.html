@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Segura Mais - Home</title>
+  <link rel="icon" type="image/png" href="imagens/logo.png">
+
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-cabecalho">
+    <button class="hamburger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <div class="mobile-menu" id="mobileMenu"><nav><ul><li><a href="index.html">Home</a></li><li><a href="sobre.html">Sobre nós</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="index.html#contato">Contato</a></li><li><a href="index.html#comentarios">Comentários</a></li></ul></nav></div>
+    <div class="cabecalho-interno">
+      <div class="logo">
+        <a href="index.html"><img src="imagens/logos.png" alt="Segura Mais logo"></a>
+      </div>
+      <nav class="principal-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#comentarios">Comentários</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="inicio">
+      <div class="inicio-esquerda"></div>
+      <div class="inicio-direita">
+        <h1>
+          o cuidado<br>
+          começa com a<br>
+          <span class="destaque">segurança</span>
+        </h1>
+      </div>
+    </section>
+
+    <section class="porque">
+      <div class="conteudo">
+        <h1 class="cta-pill">PORQUE A SEGURA MAIS?</h1>
+        <div class="motivos-grid">
+          <article class="motivo">
+            <img src="imagens/iconeescudo.png" alt="">
+            <p>Somos a maior e melhor empresa de segurança privada do Brasil</p>
+          </article>
+          <article class="motivo">
+            <img src="imagens/iconeplaneta.png" alt="">
+            <p>Temos a maior quantidade de filiais por todo o Brasil cerca de 2mil em varias cidades diferentes</p>
+          </article>
+          <article class="motivo">
+            <img src="imagens/iconedinheiro.png" alt="">
+            <p>Além de termos a melhor segurança temos o melhor preço do mercado</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="historia" id="sobre">
+      <div class="historia-interno">
+        <div class="historia-text">
+          <h2>NOSSA HISTORIA</h2>
+          <p>A Segura Mais atua desde 2013 no segmento de segurança privada, oferecendo serviços de monitoramento, vigilância patrimonial e escolta armada. Atendemos empresas e condomínios com soluções completas, aliando tecnologia de ponta e profissionais altamente treinados. Nosso compromisso é garantir proteção com eficiência, agilidade e confiança. Com uma equipe preparada e sistemas modernos, cuidamos da sua segurança para que você possa focar no que realmente importa.</p>
+        </div>
+        <div class="historia-img">
+          <img src="imagens/historia.png" alt="profissional de segurança">
+        </div>
+      </div>
+      <div class="centro-cta">
+        <a class="botao-primario" href="sobre.html">Saiba mais sobre nós</a>
+      </div>
+    </section>
+
+    <section class="servicos-destaque">
+      <h2 class="secao-titulo">SERVIÇOS</h2>
+      <div class="servicos-grid">
+        <div class="servico-cartao">
+          <img src="imagens/monitoramento.png" alt="monitoramento">
+          <div class="servico-etiqueta">Monitoramento</div>
+        </div>
+        <div class="servico-cartao">
+          <img src="imagens/vigilancia.png" alt="vigilancia">
+          <div class="servico-etiqueta">Vigilância</div>
+        </div>
+        <div class="servico-cartao">
+          <img src="imagens/escoltaarmada.png" alt="escolta armada">
+          <div class="servico-etiqueta">Escolta armada</div>
+        </div>
+      </div>
+      <div class="centro-cta">
+        <a class="botao-primario" href="servicos.html">Entenda melhor nossos serviços</a>
+      </div>
+    </section>
+
+    <section class="contato" id="contato">
+      <div class="contato-interno">
+        <div class="contato-esquerda">
+          <h2>CONTATE-NOS</h2>
+          <p>📞 Fale com a gente! <br>
+            Tem alguma dúvida ou quer saber mais? Entre em contato pelos contatos ao lado <br> nossa equipe está pronta para te atender! 💬
+          </p>
+        </div>
+        <div class="contato-direita">
+          <ul class="contato-lista">
+            <li>
+              <img src="imagens/whatsapp.png" alt="">
+              <button id="btn-whatsapp" class="contatolink" onclick="copiarWhatsApp()"><a href="https://web.whatsapp.com/" target="_blank" class="contatolink">+55 (11) 99999-9999</a></button>
+            </li><br>
+
+            <li>
+              <img src="imagens/instagram.png" alt="">
+              <a href="https://www.instagram.com/seguramais_ofc/" target="_blank" class="contatolink">                             seguramais_ofc</a>
+            </li><br>
+
+        
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="comentarios" class="comentarios">
+      <h2 class="titulo-secao">COMENTÁRIOS</h2>
+      <button id="btnMostrarForm">Adicionar Comentário</button>
+      <div id="formularioComentario" style="display:none; margin-top:10px;">
+        <input type="text" id="nome" placeholder="Seu nome..."><br><br>
+        <textarea id="mensagem" placeholder="Seu comentário..."></textarea><br><br>
+        <button id="btnEnviar">Enviar</button>
+      </div>
+      <div id="listaComentarios" style="display:flex; overflow-x:auto; gap:20px; margin-top:20px;"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-rodape">
+    <div class="rodape-interno">
+      <div>© Segura Mais - 2025</div>
+      <div>Endereço fictício • +55 (11) 99999-9999/div>
+    </div>
+  </footer>
+
+  <script>
+  function copiarWhatsApp() {
+    navigator.clipboard.writeText("+55 (11) 99999-9999");
+    const btn = document.getElementById("btn-whatsapp");
+    btn.textContent = "Copiado!";
+    setTimeout(() => btn.textContent = "+55 (11) 99999-9999", 1500);
+  }
+  </script>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBgVXr_HezJbo3QY3jdkNwKzyDlyVfpRbE",
+      authDomain: "sitetop-250cb.firebaseapp.com",
+      databaseURL: "https://sitetop-250cb-default-rtdb.firebaseio.com",
+      projectId: "sitetop-250cb",
+      storageBucket: "sitetop-250cb.firebasestorage.app",
+      messagingSenderId: "487606260265",
+      appId: "1:487606260265:web:c3627d63214d3ed3dd0238",
+      measurementId: "G-RR1KTHQ43B"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    const btnMostrarForm = document.getElementById("btnMostrarForm");
+    btnMostrarForm.style.background = "#14213D";
+    btnMostrarForm.style.color = "#E5E5E5";
+    btnMostrarForm.style.padding = "10px";
+    btnMostrarForm.style.minWidth = "200px";
+    btnMostrarForm.style.borderRadius = "12px";
+
+
+    const formComentario = document.getElementById("formularioComentario");
+  
+  
+    const btnEnviar = document.getElementById("btnEnviar");
+    btnEnviar.style.background = "#E5E5E5";
+   btnEnviar.style.color = "#14213D";
+   btnEnviar.style.padding = "10px";
+   btnEnviar.style.minWidth = "100px";
+   btnEnviar.style.borderRadius = "12px";
+    const lista = document.getElementById("listaComentarios");
+
+    btnMostrarForm.addEventListener("click", () => {
+      formComentario.style.display = formComentario.style.display === "none" ? "block" : "none"; 
+      
+    });
+
+    btnEnviar.addEventListener("click", () => {
+      const nome = document.getElementById("nome").value.trim();
+      const mensagem = document.getElementById("mensagem").value.trim();
+
+      if (nome && mensagem) {
+        const comentariosRef = ref(db, "comentarios");
+        push(comentariosRef, {
+          nome: nome,
+          mensagem: mensagem,
+          data: new Date().toLocaleString("pt-BR")
+        });
+        document.getElementById("nome").value = "";
+        document.getElementById("mensagem").value = "";
+        alert("Comentário enviado!");
+      } else {
+        alert("Por favor, preencha nome e comentário.");
+      }
+    });
+
+    onValue(ref(db, "comentarios"), (snapshot) => {
+      lista.innerHTML = "";
+      const data = snapshot.val();
+      if (data) {
+        Object.values(data).forEach(c => {
+          const div = document.createElement("div");
+          div.style.border = "1px solid #ccc";
+          div.style.padding = "10px";
+          div.style.minWidth = "200px";
+          div.style.background = "#14213D";
+          div.style.color = "#E5E5E5";
+          div.style.borderRadius = "12px";
+          div.innerHTML = `<strong>${c.nome}</strong><br>${c.mensagem}<br><small>${c.data}</small>`;
+          lista.appendChild(div);
+        });
+      }
+    });
+  </script>
+
+ 
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  if (!hamburger || !mobileMenu) return;
+
+  hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('open');
+  });
+
+  document.addEventListener('click', function(e) {
+    if (mobileMenu.classList.contains('open') && !mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
